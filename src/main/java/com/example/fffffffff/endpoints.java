@@ -19,5 +19,11 @@ public class endpoints {
     public String nameDoesntMatter(){
     return "Hello world";}
     
-   
+    @RequestMapping("/std")
+    public student wedontcare(){
+    student result =new student();
+    result.setName("george");
+    result.setAge(30);
+    return result;
+    }
 }
